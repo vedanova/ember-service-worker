@@ -121,7 +121,7 @@ module.exports = {
 
     let options = this._getOptions();
     let config = this._getConfig();
-    let rootUrl = ''
+    var rootUrl = ''
     if (options.rootUrl === '') {
       rootURL = '';
     } else {
