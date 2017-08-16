@@ -121,10 +121,11 @@ module.exports = {
 
     let options = this._getOptions();
     let config = this._getConfig();
+    let rootUrl = ''
     if (options.rootUrl === '') {
-      let rootURL = '';
+      rootURL = '';
     } else {
-     let rootURL = options.rootUrl || config.rootURL || config.baseURL || '/'; 
+     rootURL = options.rootUrl || config.rootURL || config.baseURL || '/'; 
     }
 
     return this._projectRootURL = rootURL;
